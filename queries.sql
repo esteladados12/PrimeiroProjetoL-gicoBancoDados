@@ -1,3 +1,4 @@
+-- BAIXA COMPLEXIDADE
 -- Listar todos os clientes: Mostrar nome e sobrenome ordenados alfabeticamente
 SELECT
 Fname as 'nome',
@@ -48,7 +49,7 @@ WHERE
 OrderStatus = 'Cancelado';
 
 
-> MÉDIA complexidade
+-- MÉDIA complexidade
 -- Pedidos por Cliente: Listar o nome do cliente e a quantidade de pedidos que cada um já fez.
 SELECT
 CONCAT(Fname, ' ', Lname) as Cliente,
@@ -105,7 +106,7 @@ WHERE
 PO.ProductOrderStatus = 'Sem estoque';
 
 
-> ALTA complexidade
+-- ALTA complexidade
 -- Ranking de Vendedores: Listar os vendedores que possuem a maior variedade de produtos distintos cadastrados
 SELECT 
     S.SocialName AS Vendedor,
